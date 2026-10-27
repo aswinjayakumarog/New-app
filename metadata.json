@@ -1,0 +1,6 @@
+{
+  "name": "CineTrack",
+  "description": "Track movies and TV show progress without scrobbiling. Explore trending titles, log episode progress, manage watchlists, and view stats powered by TMDB.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
