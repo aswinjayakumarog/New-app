@@ -458,113 +458,143 @@ class CineTrackRepository(
     mediaDao.clearAllEpisodes()
   }
 
-  // Curated Fallbacks for offline resilience
+  // Curated Fallbacks mirroring live TMDB catalogue for offline resilience
   private fun getFallbackTrending(): List<TmdbMediaDto> = listOf(
     TmdbMediaDto(
-      id = 1399,
-      name = "Game of Thrones",
-      overview = "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
-      posterPath = "/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
-      backdropPath = "/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
-      mediaType = "tv",
-      firstAirDate = "2011-04-17",
-      voteAverage = 8.4
-    ),
-    TmdbMediaDto(
-      id = 693134,
-      title = "Dune: Part Two",
-      overview = "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family.",
-      posterPath = "/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
-      backdropPath = "/xOMo8BRK7PfcJv9JCnx7s520b4q.jpg",
+      id = 1384216,
+      title = "The Dog Stars",
+      overview = "Hig survived the flu that wiped out almost everyone he knows. His wife is gone, his friends are dead, and he lives in an airplane hangar with his dog.",
+      posterPath = "/A7i16oDi03qrKep5pBfuTWNUTb.jpg",
+      backdropPath = "/joVtII9prX3MC4a2LfoKsiMWET3.jpg",
       mediaType = "movie",
-      releaseDate = "2024-03-01",
-      voteAverage = 8.2
+      releaseDate = "2026-08-26",
+      voteAverage = 6.6
     ),
     TmdbMediaDto(
-      id = 94605,
-      name = "Arcane",
-      overview = "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and incompatible convictions.",
-      posterPath = "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
-      backdropPath = "/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
+      id = 1283515,
+      title = "Verity",
+      overview = "Lowen Ashleigh, a struggling writer on the brink of financial ruin, accepts the job offer of a lifetime: complete the remaining books of a successful series.",
+      posterPath = "/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
+      backdropPath = "/zrGI2Lm89fgR5ntysKLmEPgNrdV.jpg",
+      mediaType = "movie",
+      releaseDate = "2026-09-30",
+      voteAverage = 6.4
+    ),
+    TmdbMediaDto(
+      id = 96677,
+      name = "Lupin",
+      overview = "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      posterPath = "/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
+      backdropPath = "/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
       mediaType = "tv",
-      firstAirDate = "2021-11-06",
+      firstAirDate = "2021-01-08",
+      voteAverage = 7.7
+    ),
+    TmdbMediaDto(
+      id = 220542,
+      name = "The Apothecary Diaries",
+      overview = "Maomao, a young woman trained in the art of herbal medicine, is forced to work as a lowly servant in the inner palace.",
+      posterPath = "/sJZcy8QsOPuRPiCfoCWVB3r9Ohg.jpg",
+      backdropPath = "/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
+      mediaType = "tv",
+      firstAirDate = "2023-10-22",
       voteAverage = 8.7
     ),
     TmdbMediaDto(
-      id = 157336,
-      title = "Interstellar",
-      overview = "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel.",
-      posterPath = "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-      backdropPath = "/xJHokMbljvjADYdit5fK5VQsXEG.jpg",
+      id = 1465063,
+      title = "Forgotten Island",
+      overview = "A harrowing voyage into unfamiliar territory tests the courage of survivors on a remote island.",
+      posterPath = "/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
+      backdropPath = "/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
       mediaType = "movie",
-      releaseDate = "2014-11-05",
-      voteAverage = 8.4
+      releaseDate = "2026-09-10",
+      voteAverage = 7.5
     )
   )
 
   private fun getFallbackMovies(): List<TmdbMediaDto> = listOf(
     TmdbMediaDto(
-      id = 27205,
-      title = "Inception",
-      overview = "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life.",
-      posterPath = "/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
-      backdropPath = "/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
+      id = 969681,
+      title = "Spider-Man: Brand New Day",
+      overview = "Peter Parker embarks on a fresh chapter in New York City facing unprecedented adversaries and testing his resolve.",
+      posterPath = "/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      backdropPath = "/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
       mediaType = "movie",
-      releaseDate = "2010-07-16",
-      voteAverage = 8.4
-    ),
-    TmdbMediaDto(
-      id = 155,
-      title = "The Dark Knight",
-      overview = "Batman raises the stakes in his war on crime with the help of Lt. Jim Gordon and District Attorney Harvey Dent against the Joker.",
-      posterPath = "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-      backdropPath = "/dqK9Hag1054tghRQSqLSfrkvQnA.jpg",
-      mediaType = "movie",
-      releaseDate = "2008-07-16",
+      releaseDate = "2026-07-29",
       voteAverage = 8.5
     ),
     TmdbMediaDto(
-      id = 238,
-      title = "The Godfather",
-      overview = "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family.",
-      posterPath = "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-      backdropPath = "/tmU7GeKVybMWF9YOCagmsXZdn9n.jpg",
+      id = 1058424,
+      title = "Hope",
+      overview = "In a battle against impossible odds, a team bands together to illuminate the darkest corners of their realm.",
+      posterPath = "/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+      backdropPath = "/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       mediaType = "movie",
-      releaseDate = "1972-03-14",
-      voteAverage = 8.7
+      releaseDate = "2026-07-15",
+      voteAverage = 6.7
+    ),
+    TmdbMediaDto(
+      id = 1101412,
+      title = "Fall 2: Deadpoint",
+      overview = "High-altitude climbers fight against harsh weather and lethal hazards in a race against time.",
+      posterPath = "/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
+      backdropPath = "/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
+      mediaType = "movie",
+      releaseDate = "2026-09-01",
+      voteAverage = 7.3
+    ),
+    TmdbMediaDto(
+      id = 1368337,
+      title = "The Odyssey",
+      overview = "An epic retelling of the ten-year journey home across uncharted seas and mythical perils.",
+      posterPath = "/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      backdropPath = "/bulFtfy3oBQtCnAMSi7g6DSSds3.jpg",
+      mediaType = "movie",
+      releaseDate = "2026-07-15",
+      voteAverage = 8.0
     )
   )
 
   private fun getFallbackTv(): List<TmdbMediaDto> = listOf(
     TmdbMediaDto(
-      id = 1396,
-      name = "Breaking Bad",
-      overview = "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and turns to manufacturing methamphetamine.",
-      posterPath = "/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
-      backdropPath = "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+      id = 1416,
+      name = "Grey's Anatomy",
+      overview = "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+      posterPath = "/gO8Fo47KV1opiutRDdBS5jclTQB.jpg",
+      backdropPath = "/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
       mediaType = "tv",
-      firstAirDate = "2008-01-20",
-      voteAverage = 8.9
+      firstAirDate = "2005-03-27",
+      voteAverage = 8.2
     ),
     TmdbMediaDto(
-      id = 119051,
-      name = "Wednesday",
-      overview = "Wednesday Addams is expelled from school and sent to Nevermore Academy, a boarding school for monstrous outcasts.",
-      posterPath = "/9PFonQ95165agVa9zgpHwbOzqYv.jpg",
-      backdropPath = "/iHSwvFe7FdFcRm039sbGekV3UB2.jpg",
+      id = 1411,
+      name = "Person of Interest",
+      overview = "A former CIA operative and an eccentric billionaire software programmer team up to prevent violent crimes.",
+      posterPath = "/f8aIvYk5h7Z8EP3dinCmVgQFYow.jpg",
+      backdropPath = "/efeMgQn6iRALsOqDa2cqlf6Pw5O.jpg",
       mediaType = "tv",
-      firstAirDate = "2022-11-23",
-      voteAverage = 8.5
+      firstAirDate = "2011-09-22",
+      voteAverage = 8.1
     ),
     TmdbMediaDto(
-      id = 85552,
-      name = "Euphoria",
-      overview = "A group of high school students navigate love and friendships in a world of drugs, sex, trauma and social media.",
-      posterPath = "/3Q0hd3heuW4YvJYDkVthHQ3sa4v.jpg",
-      backdropPath = "/93A60v2Z1Zz2cK7f8z7H3a0C4e2.jpg",
+      id = 2734,
+      name = "Law & Order: Special Victims Unit",
+      overview = "In the criminal justice system, sexually based offenses are considered especially heinous. These are their stories.",
+      posterPath = "/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+      backdropPath = "/xhK9YCxNwnE0OB1SWvCY39heHQI.jpg",
       mediaType = "tv",
-      firstAirDate = "2019-06-16",
-      voteAverage = 8.3
+      firstAirDate = "1999-09-20",
+      voteAverage = 8.0
+    ),
+    TmdbMediaDto(
+      id = 1434,
+      name = "Family Guy",
+      overview = "Sick, twisted and politically incorrect, the animated series features the adventures of the Griffin family.",
+      posterPath = "/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
+      backdropPath = "/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
+      mediaType = "tv",
+      firstAirDate = "1999-01-31",
+      voteAverage = 7.4
     )
   )
 }
